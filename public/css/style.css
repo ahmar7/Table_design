@@ -4,13 +4,16 @@ body {
 }
 
 .main-container {
-    width: 100vw !important;
+
+    /* width: 100vw !important; */
     height: 100vh;
     overflow-x: auto;
 }
 
 table {
     min-width: max-content;
+
+    min-height: 99vh;
 }
 
 .main-table {
@@ -37,6 +40,12 @@ td {
     padding: 0 20px;
 }
 
+.colmn1 {
+    position: sticky;
+    left: 0;
+    background-color: #8bdddd;
+}
+
 /* .last-colmn {
     border-right: 2px solid black;
 }
@@ -46,4 +55,25 @@ td {
     text-align: left !important;
 } */
 
-.colmn1 {}
+
+@media (max-width:768px) {
+    .main-container {
+        margin-left: 5px;
+    }
+
+    th {
+        font-size: 13px;
+    }
+
+    td {
+        font-size: 11px;
+    }
+
+    td {
+        padding: 0 5px;
+    }
+
+    table {
+        min-height: 100vh;
+    }
+}
