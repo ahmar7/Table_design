@@ -20,7 +20,7 @@ tr, th, td {
 th {
     /* border: 2px solid black; */
     position: sticky;
-    background-color: teal;
+    background-color: #8bdddd;
     top: -1px;
     margin: 0;
     padding: 0;
@@ -40,6 +40,4 @@ td {
     text-align: left !important;
 } */
 
-/* .colmn1 {
-    border: 2px solid black;
-} */
+.colmn1 {}
