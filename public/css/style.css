@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
@@ -12,38 +13,90 @@ body {
 
 table {
     min-width: max-content;
-
+    border-collapse: collapse;
     min-height: 99vh;
 }
 
 .main-table {
     border: 1px solid black;
-    border-collapse: collapse;
+
 
 }
 
 tr, th, td {
     border: 1px solid black;
+
 }
 
 th {
-    /* border: 2px solid black; */
+
     position: sticky;
-    background-color: #8bdddd;
-    top: -1px;
+
+    background-color: #93ffff;
+
     margin: 0;
+    top: 0;
     padding: 0;
     height: 30px;
 }
 
+.table-heading th::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+
+.table-heading th::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    background-color: black;
+}
+
 td {
-    padding: 0 20px;
+    padding: 2px 20px;
 }
 
 .colmn1 {
     position: sticky;
-    left: 0;
-    background-color: #8bdddd;
+    /* padding: 2px 20px; */
+    top: 0;
+    left: -1px;
+    background-color: #93ffff;
+    /* color: white; */
+}
+
+
+/* tr .colmn1::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: black;
+}
+
+tr .colmn1::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: black;
+} */
+
+.heading {
+    background-color: #93ffff;
+
 }
 
 /* .last-colmn {
@@ -57,9 +110,7 @@ td {
 
 
 @media (max-width:768px) {
-    .main-container {
-        margin-left: 5px;
-    }
+
 
     th {
         font-size: 13px;
