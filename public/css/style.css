@@ -29,14 +29,25 @@ th, td {
 
 }
 
-th {
+/* th {
 
     position: sticky;
 
     background-color: #93ffff;
 
-    margin: 0;
     top: 0;
+    left: 0;
+    padding: 0;
+    height: 30px;
+} */
+
+.sticky-table {
+    position: sticky;
+
+    background-color: #93ffff;
+
+    top: 0;
+    left: 0;
     padding: 0;
     height: 30px;
 }
@@ -110,7 +121,7 @@ tr .colmn1::before {
 } */
 
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
 
 
     th {
@@ -128,4 +139,4 @@ tr .colmn1::before {
     table {
         min-height: 100vh;
     }
-}
+} */
