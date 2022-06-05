@@ -15,7 +15,7 @@ table {
     min-width: max-content;
     /* border-collapse: collapse; */
     border-spacing: 0;
-    min-height: 99vh;
+    /* min-height: 99vh; */
 }
 
 .main-table {
@@ -121,12 +121,12 @@ tr .colmn1::before {
 } */
 
 
-/* @media (max-width:768px) {
+@media (max-width:768px) {
 
 
-    th {
+    /* th {
         font-size: 13px;
-    }
+    } */
 
     td {
         font-size: 11px;
@@ -137,6 +137,6 @@ tr .colmn1::before {
     }
 
     table {
-        min-height: 100vh;
+        min-height: 120vh;
     }
-} */
+}
