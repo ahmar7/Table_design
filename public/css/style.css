@@ -5,9 +5,10 @@ body {
 }
 
 .main-container {
-
+    margin: 5px;
+    overflow-y: hidden;
     /* width: 100vw !important; */
-    height: 100vh;
+    height: 95vh;
     overflow-x: auto;
 }
 
