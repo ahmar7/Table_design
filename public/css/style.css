@@ -1,59 +1,55 @@
 body {
     margin: 0;
+    overflow-y: hidden;
     padding: 0;
+    background-color: #323c50;
     font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
-    margin: 5px;
-    overflow-y: hidden;
+    /* margin: 5px; */
+
     /* width: 100vw !important; */
-    height: 95vh;
+    height: 100vh;
     overflow-x: auto;
 }
 
 table {
+    background-color: #1f2739;
     min-width: max-content;
-    /* border-collapse: collapse; */
-    border-spacing: 0;
+    border-collapse: collapse;
+    /* border-spacing: 0; */
     /* min-height: 99vh; */
 }
 
 .main-table {
-    border: 1px solid rgb(110, 110, 110);
+    border: 1px solid #17191f;
 
 
 }
 
-th, td {
-    border: 1px solid rgb(110, 110, 110);
+td {
+    border: 1px solid #17191f;
 
 }
 
-/* th {
+th {
+    border: 1px solid #17191f;
 
-    position: sticky;
-
-    background-color: #93ffff;
-
-    top: 0;
-    left: 0;
-    padding: 0;
-    height: 30px;
-} */
+}
 
 .sticky-table {
     position: sticky;
-
-    background-color: #93ffff;
-
+    color: #1b9ae4;
+    background-color: #1f2739;
     top: 0;
     left: 0;
+    z-index: 9999;
     padding: 0;
     height: 30px;
 }
 
-.table-heading th::after {
+/* .table-heading th::after {
     content: "";
     width: 100%;
     height: 1px;
@@ -61,7 +57,7 @@ th, td {
     left: 0;
     top: 100%;
     background-color: black;
-}
+} */
 
 .table-heading th::before {
     content: "";
@@ -70,11 +66,12 @@ th, td {
     position: absolute;
     left: 0;
     bottom: 100%;
-    background-color: black;
+    background-color: #17191f;
 }
 
 td {
-    padding: 2px 20px;
+    padding: 8px 20px;
+    color: #c7c7c7
 }
 
 .colmn1 {
@@ -82,7 +79,9 @@ td {
     /* padding: 2px 20px; */
     top: 0;
     left: -1px;
-    background-color: #93ffff;
+    background-color: #1f2739;
+    color: #d35c6f;
+    /* background-color: #93ffff; */
     /* color: white; */
 }
 
@@ -108,7 +107,9 @@ tr .colmn1::before {
 } */
 
 .heading {
-    background-color: #93ffff;
+    background-color: #464a52;
+    color: #c7c7c7;
+
 
 }
 
